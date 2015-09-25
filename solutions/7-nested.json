@@ -13,11 +13,6 @@
 		"Subnet": {
 			"Description": "subnet to launch virtual server in",
 			"Type": "AWS::EC2::Subnet::Id"
-		},
-		"URL": {
-			"Description": "URL for load testing",
-			"Type": "String",
-			"Default": "http://widdix.net/"
 		}
 	},
 	"Resources": {
@@ -27,17 +22,16 @@
 				"Parameters" : {
 					"KeyName": {"Ref": "KeyName"},
 					"VPC": {"Ref": "VPC"},
-					"Subnet": {"Ref": "Subnet"},
-					"URL": {"Ref": "URL"}
+					"Subnet": {"Ref": "Subnet"}
 				},
-				"TemplateURL" : "https://s3-eu-west-1.amazonaws.com/learn-cloudformation/solutions/6-mappings.json",
+				"TemplateURL" : "https://s3-eu-west-1.amazonaws.com/cloudformation-workshop/solutions/6-mappings.json",
 				"TimeoutInMinutes" : "5"
 			}
 		},
 		"S3Stack": {
 			"Type" : "AWS::CloudFormation::Stack",
 			"Properties" : {
-				"TemplateURL" : "https://s3-eu-west-1.amazonaws.com/learn-cloudformation/solutions/1-simple.json",
+				"TemplateURL" : "https://s3-eu-west-1.amazonaws.com/cloudformation-workshop/solutions/1-simple.json",
 				"TimeoutInMinutes" : "2"
 			}
 		}

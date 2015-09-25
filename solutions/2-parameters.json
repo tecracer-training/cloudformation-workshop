@@ -5,6 +5,7 @@
 		"AMI": {
 			"Description": "AMI to start virtual server",
 			"Type": "String",
+		    "Default": "ami-69b9941e",
 			"MaxLength": 12,
 			"MinLength": 12
 		},
@@ -28,7 +29,7 @@
 				"Tags": [
 					{
 						"Key": "Name",
-						"Value": "learn-cloudformation-2-parameters"
+						"Value": "cloudformation-workshop-Lab2-parameters"
 					}
 				]
 			}

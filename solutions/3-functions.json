@@ -5,6 +5,7 @@
 		"AMI": {
 			"Description": "AMI to start virtual server",
 			"Type": "String",
+		    "Default": "ami-69b9941e",
 			"MaxLength": 12,
 			"MinLength": 12
 		},
@@ -28,12 +29,13 @@
 				"Tags": [
 					{
 						"Key": "Name",
-						"Value": "learn-cloudformation-3-functions"
+						"Value": "cloudformation-workshop-Lab3-functions"
 					}
 				],
 				"UserData": {"Fn::Base64": {"Fn::Join": ["", [
 					"#!/bin/bash -ex\n",
-					"curl http://public-sst.s3.amazonaws.com/demo/wordpress.sh | sh", "\n"
+				    "yum install -y httpd\n",
+				  	"httpd -k start", "\n"
 				]]}}
 			}
 		}

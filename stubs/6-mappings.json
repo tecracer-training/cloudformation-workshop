@@ -13,24 +13,19 @@
 		"Subnet": {
 			"Description": "subnet to launch virtual server in",
 			"Type": "AWS::EC2::Subnet::Id"
-		},
-		"URL": {
-			"Description": "URL for load testing",
-			"Type": "String",
-			"Default": "http://widdix.net/"
 		}
 	},
 	"Mappings": {
 		// TODO add map between regions and AMIs
-		// ap-northeast-1 => ami-cbf90ecb
-		// ap-southeast-1 => ami-68d8e93a
-		// ap-southeast-2 => ami-fd9cecc7
-		// eu-central-1 => ami-a8221fb5
-		// eu-west-1 => ami-a10897d6
-		// sa-east-1 => ami-b52890a8
-		// us-east-1 => ami-1ecae776
-		// us-west-1 => ami-d114f295
-		// us-west-2 => ami-e7527ed7
+	  	//ap-northeast-1 -> "ami-9a2fb89a"
+	  	//ap-southeast-1 -> "ami-52978200"
+	  	//ap-southeast-2 -> "ami-c11856fb"
+	  	//eu-central-1 -> "ami-daaeaec7"
+	  	//eu-west-1 -> "ami-69b9941e"
+	  	//sa-east-1 -> "ami-3b0c9926"
+	  	//us-east-1 -> "ami-e3106686"
+	  	//us-west-1 -> "ami-cd3aff89"
+	  	//us-west-2 -> "ami-9ff7e8af"
 	},
 	"Resources": {
 		"SecurityGroup": {
@@ -55,13 +50,13 @@
 				"Tags": [
 					{
 						"Key": "Name",
-						"Value": "learn-cloudformation-5-dependencies"
+						"Value": "cloudformation-workshop-Lab6-mappings"
 					}
 				],
 				"UserData": {"Fn::Base64": {"Fn::Join": ["", [
-					"#!/bin/bash -ex\n",
-					"yum install -y httpd-tools\n",
-					"ab -n 1000 -c 4 ", {"Ref": "URL"}, "\n"
+				  "#!/bin/bash -ex\n",
+				  "yum install -y httpd\n",
+				  "httpd -k start", "\n"
 				]]}},
 				"KeyName": {"Ref": "KeyName"},
 				"SecurityGroupIds": [{"Ref": "SecurityGroup"}]

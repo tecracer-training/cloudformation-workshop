@@ -5,6 +5,7 @@
 		"AMI": {
 			"Description": "AMI to start virtual server",
 			"Type": "String",
+		  	"Default": "ami-69b9941e",
 			"MaxLength": 12,
 			"MinLength": 12
 		},
@@ -16,11 +17,6 @@
 		"Subnet": {
 			"Description": "subnet to launch virtual server in",
 			"Type": "AWS::EC2::Subnet::Id"
-		},
-		"URL": {
-			"Description": "URL for load testing",
-			"Type": "String",
-			"Default": "http://widdix.net/"
 		}
 	},
 	"Resources": {
@@ -33,13 +29,13 @@
 				"Tags": [
 					{
 						"Key": "Name",
-						"Value": "learn-cloudformation-4-outputs"
+						"Value": "cloudformation-workshop-Lab4-outputs"
 					}
 				],
-				"UserData": {"Fn::Base64": {"Fn::Join": ["", [
+			  	"UserData": {"Fn::Base64": {"Fn::Join": ["", [
 					"#!/bin/bash -ex\n",
-					"yum install -y httpd-tools\n",
-					"ab -n 1000 -c 4 ", {"Ref": "URL"}, "\n"
+					"yum install -y httpd\n",
+					"httpd -k start", "\n"
 				]]}}
 			}
 		}

@@ -6,7 +6,7 @@
 			"Type" : "AWS::S3::Bucket",
 			"Properties": {
 				"WebsiteConfiguration": {
-					"IndexDocument" : "index.html"
+					"IndexDocument" : "1-index.html"
 				}
 			}
 		}
