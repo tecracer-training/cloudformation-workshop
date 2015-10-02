@@ -1,0 +1,28 @@
+{
+	"AWSTemplateFormatVersion": "2010-09-09",
+	"Description": "EC2 instance with functions",
+	"Parameters": {
+		"KeyName": {
+			"Description": "Key Pair name",
+			"Type": "AWS::EC2::KeyPair::KeyName"
+		},
+		"VPC": {
+			"Description": "VPC to launch virtual server in",
+			"Type": "AWS::EC2::VPC::Id"
+		},
+		"Subnet": {
+			"Description": "subnet to launch virtual server in",
+			"Type": "AWS::EC2::Subnet::Id"
+		}
+	},
+	"Resources": {
+		// add stacks (S3 and EC2)
+		// https://s3-eu-west-1.amazonaws.com/cloudformation-workshop/solutions/6-mappings.json
+		// https://s3-eu-west-1.amazonaws.com/cloudformation-workshop/solutions/1-simple.json
+
+	},
+	"Outputs": {
+		// TODO add outputs
+		// from stack EC2 (instance id and public IP address)
+	}
+}

@@ -1,14 +1,15 @@
-# learn-cloudformation
+# cloudformation-workshop
 
-Labs helping you to dive into CloudFormation. Start from ``stubs`` have a look at ``solutions`` or ask your instructor if you need help.
+Labs helping you to dive into CloudFormation. Read the Lab Description and start coding from ``stubs``. 
+Have a look at ``solutions`` or ask your instructor if you need help.
 
 ## Resources
-http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html
+Types: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html
 
-http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html
+Parameters: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html
 
-http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html 
+Output: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html 
 
-
-## Highlight
-highlight -S js -O rtf --style night --font-size 30 presentations/7-nested.json | pbcopy 
+## Tools
+If you use IntelliJ Idea you can add cloudformation plugin from https://plugins.jetbrains.com/plugin/7371, 
+which provides template check, code completion etc.
