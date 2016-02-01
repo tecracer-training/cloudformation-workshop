@@ -1,0 +1,33 @@
+{
+	"AWSTemplateFormatVersion": "2010-09-09",
+	"Description": "EC2 instance with functions",
+	"Parameters": {
+		"KeyName": {
+			"Description": "Key Pair name",
+			"Type": "AWS::EC2::KeyPair::KeyName"
+		},
+		"VPC": {
+			"Description": "VPC to launch virtual server in",
+			"Type": "AWS::EC2::VPC::Id"
+		},
+		"Subnet": {
+			"Description": "subnet to launch virtual server in",
+			"Type": "AWS::EC2::Subnet::Id"
+		},
+		"URL": {
+			"Description": "URL for load testing",
+			"Type": "String",
+			"Default": "http://www.tecracer.de/"
+		}
+	},
+	"Resources": {
+		// add stacks
+		// http://courses.awsplayground.net/cloudformation-workshop/cflab07-ec2-stack.template
+		// http://courses.awsplayground.net/cloudformation-workshop/cflab07-s3-stack.template
+
+	},
+	"Outputs": {
+		// TODO add outputs
+		// from stack lab6-mappings (instance id and public IP address)
+	}
+}

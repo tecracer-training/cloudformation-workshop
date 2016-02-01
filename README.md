@@ -1,7 +1,8 @@
 # cloudformation-workshop
 
-Labs helping you to dive into CloudFormation. Read the Lab Description and start coding from ``stubs``. 
-Have a look at ``solutions`` or ask your instructor if you need help.
+Labs helping you to dive into CloudFormation. Read the Lab Description in each Readme.md and 
+start coding from ``lab..-stub.template``. 
+Have a look at ``lab..-sample-solution.template`` or ask your instructor if you need help.
 
 ## Resources
 Types: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html
