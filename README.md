@@ -4,7 +4,7 @@ Labs helping you to dive into CloudFormation. Read the Lab Description in each R
 start coding from ``lab..-stub.template``. 
 Have a look at ``lab..-sample-solution.template`` or ask your instructor if you need help.
 
-## Versioin
+## Version
 These Labs match the slide deck version 1.0.4
 
 ## Resources
