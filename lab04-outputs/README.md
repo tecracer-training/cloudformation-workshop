@@ -32,12 +32,11 @@ Use outputs to get access to information about the resources created by a stack.
 ### Test
 1. Select your stack by clicking on row of the table.
 1. Change to the **Outputs** tab.
-1. Find value of ``InstanceId`` and note it down.
+1. Find value of ``InstanceId`` and ``PublicIPAddress`` and note them down.
 1. Select the **EC2 service** from the main navigation.
 1. Search for an EC2 instance with the instance id from the outputs tab.
 1. Select the EC2 instance by clicking on the row of the table.
-1. Select the action **Get System Log** from the **Actions** menu hidden under **Instance Settings**.
-1. You will find the outputs from the load test in the logs.
+1. Compare the public IP Address of this instance from **Details** with the one you noted previously
 
 ### Delete your stack
 1. Switch back to the CloudFormation service.

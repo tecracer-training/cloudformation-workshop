@@ -21,7 +21,7 @@ CloudFormation detects dependencies between resources and creates, updates, or d
 1. Click **Next** button.
 1. Insert ``lab05-$username``as stack name. Replace ``$username``with your username (e.g. lab05-myname).
 1. Select a random subnet as parameter for **Subnet**.
-1. Select a random key as parameter for **Key Pair**.
+1. Select the ``qwikLABS...`` key as parameter for **Key Pair**.
 1. Insert ``t2.micro`` as parameter for **InstanceType**.
 1. Insert ``ami-bff32ccc`` (eu-west-1) or ``ami-bc5b48d0``(eu-central-1) as parameter for **AMI**.
 1. Insert ``http://www.tecracer.de/`` or a website you own for **URL**.
@@ -38,6 +38,7 @@ CloudFormation detects dependencies between resources and creates, updates, or d
 1. Search for an EC2 instance with the instance id from the outputs tab.
 1. Select the EC2 instance by clicking on the row of the table.
 1. Search for the Security Group attached to the EC2 instance and check if it allows incoming traffic to port 22.
+1. (optional) ssh into your instance: get your private key file from the qwiklabs environment and call ssh (on Mac: ssh -i ``pem file from qwiklabs`` ec2-user@ ``public ip of your instance``)
 
 ### Delete your stack
 1. Switch back to the CloudFormation service.

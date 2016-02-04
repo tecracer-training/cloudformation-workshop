@@ -1,6 +1,6 @@
 {
 	"AWSTemplateFormatVersion": "2010-09-09",
-	"Description": "EC2 instance with functions",
+	"Description": "lab06 mappings",
 	"Parameters": {
 		"KeyName": {
 			"Description": "Key Pair name",

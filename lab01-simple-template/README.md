@@ -29,7 +29,9 @@ Create a S3 bucket with the help of CloudFormation.
 1. Wait until your stack reaches status **CREATE_COMPLETE**.
 
 ### Test
-1. create a Index.html-File and upload it into the bucket (set permissions on file and bucket)
+locate your bucket in AWS Management Console 
+OR
+create a Index.html-File and upload it to the bucket (set permissions on file and bucket, change setting for static webserver)
 
 ### Delete your stack
 1. Select your stack by clicking on row of the table.

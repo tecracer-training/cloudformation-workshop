@@ -1,6 +1,6 @@
 {
 	"AWSTemplateFormatVersion": "2010-09-09",
-	"Description": "Hello World! example",
+	"Description": "lab00 Hello World! example",
 	"Parameters": {
 		"VPC": {
 			"Description": "The default VPC",

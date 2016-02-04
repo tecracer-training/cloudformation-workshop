@@ -13,7 +13,7 @@ Create a CloudFormation stack and use Rolling Updates to update the application 
 1. Select **Upload a template to Amazon S3**.
 1. Choose file ``demo-rolling-update.template``.
 1. Click **Next** button.
-1. Insert ``lab09-$username``as stack name. Replace ``$username``with your username (e.g. lab09-myname).
+1. Insert ``lab09-$username`` as stack name. Replace ``$username`` with your username (e.g. lab09-myname).
 1. Select two random subnets and the only available VPC as **Parameters**.
 1. Insert ``1`` as **VersionParameter**.
 1. Click **Next** button.

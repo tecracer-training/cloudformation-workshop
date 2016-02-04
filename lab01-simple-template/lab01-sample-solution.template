@@ -1,6 +1,6 @@
 {
 	"AWSTemplateFormatVersion": "2010-09-09",
-	"Description": "Simple S3 bucket",
+	"Description": "lab01 Simple S3 bucket",
 	"Resources": {
 		"S3Bucket": {
 			"Type" : "AWS::S3::Bucket",

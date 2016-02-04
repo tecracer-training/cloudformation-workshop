@@ -39,8 +39,11 @@ ab -n 1000 -c 4 $URL
 1. Wait until your stack reaches status **CREATE_COMPLETE**.
 
 ### Test
-1. Access your newly created webserver via its public IP.
-   (hint: lookup the public IP in EC2 Console and setup your security group properly to allow incoming traffic)
+1. Switch to AWS Management Console EC2 und select your instance
+1. Click **Actions** and from the submenus **Instance Settings** and **Get System Log**
+1. Check the output at the lower end of the log: you can see log entries from install of httpd-tools and below the results of the load test.
+
+   caution: it takes about 5 Minutes for the machines system log to be accessable!
 
 ### Delete your stack
 1. Select your stack by clicking on row of the table.

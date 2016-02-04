@@ -1,6 +1,6 @@
 {
 	"AWSTemplateFormatVersion": "2010-09-09",
-	"Description": "Lab 8: cfn-init",
+	"Description": "Lab08 cfn-init",
 	"Parameters": {
 		"VPC": {
 			"Description": "The default VPC",

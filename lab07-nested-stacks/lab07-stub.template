@@ -1,6 +1,6 @@
 {
 	"AWSTemplateFormatVersion": "2010-09-09",
-	"Description": "EC2 instance with functions",
+	"Description": "lab07 nested stacks",
 	"Parameters": {
 		"KeyName": {
 			"Description": "Key Pair name",
@@ -22,8 +22,8 @@
 	},
 	"Resources": {
 		// add stacks
-		// http://courses.awsplayground.net/cloudformation-workshop/cflab07-ec2-stack.template
-		// http://courses.awsplayground.net/cloudformation-workshop/cflab07-s3-stack.template
+		// https://s3-eu-west-1.amazonaws.com/courses.awsplayground.net/cloudformation-workshop/cflab07-ec2-stack.template
+		// https://s3-eu-west-1.amazonaws.com/courses.awsplayground.net/cloudformation-workshop/cflab07-s3-stack.template
 
 	},
 	"Outputs": {

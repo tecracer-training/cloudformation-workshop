@@ -33,8 +33,7 @@ us-west-2 => ami-e7527ed7
 1. Click **Next** button.
 1. Insert ``lab06-$username`` as stack name. Replace ``$username`` with your username (e.g. lab06-myname).
 1. Select a random subnet as parameter for **Subnet**.
-1. Select a random key as parameter for **Key Pair**.
-1. Insert ``t2.micro`` as parameter for **InstanceType**.
+1. Select the ``qwikLABS...`` key as parameter for **Key Pair**.
 1. Insert ``http://www.tecracer.de/`` or a website you own for **URL**.
 1. Click **Next** button.
 1. Skip next step by clicking on **Next** button.

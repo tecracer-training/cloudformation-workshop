@@ -1,6 +1,6 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
-  "Description": "Rolling Update",
+  "Description": "lab09 Rolling Update",
   "Parameters": {
     "VPCParameter": {
       "Description": "VPC to launch instances into",
